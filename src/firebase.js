@@ -5,12 +5,12 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAwoKAVcj3AjC0YvOReVwCxgoKPd7PElko",
-  authDomain: "task-manager-app-amna581.firebaseapp.com",
-  projectId: "task-manager-app-amna581",
-  storageBucket: "task-manager-app-amna581.firebasestorage.app",
-  messagingSenderId: "605376689367",
-  appId: "1:605376689367:web:9b302b27c4c46b86762c92"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
